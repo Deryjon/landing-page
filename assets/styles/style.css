@@ -3,8 +3,18 @@
     padding: 0;
     box-sizing: border-box;
   }
+  a{
+    text-decoration: none; 
+  }
   body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  .header {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+  .header .logo{
+    margin: 0 auto;
   }
   .container {
     width: 80%;
@@ -13,6 +23,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .about{
+    display: none;
   }
   .logo {
     width: 200px;
@@ -23,7 +36,6 @@
   }
   .title-section {
     text-align: center;
-    margin-top: 10px;
     font-size: 36px;
     text-transform: capitalize;
     font-weight: 700;
@@ -35,7 +47,8 @@
     margin: 10px 0;
     max-width: 390px;
   }
-  .animated-button1 {
+  .button {
+    cursor: pointer;  
     text-decoration: none;
     display: inline-block;
     width: 584px;
@@ -51,7 +64,7 @@
     color: #0077c0;
     transition: .6s ease-in-out;
   }
-  .animated-button1:before {
+  .button:before {
     content: "";
     background: linear-gradient(90deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .5));
     height: 100%;
@@ -61,18 +74,73 @@
     left: -95px;
     transform: skewX(-45deg);
   }
-  .animated-button1:hover {
+  .button:hover {
     background-color: #0077c0;
     color: #fff;
     border: 2px solid #0077c0;
   }
-  .animated-button1:hover:before {
+  .button:hover:before {
     left: 110%;
     transition: 0.9s ease-in-out;
   }
   .product-image {
     width: 511px;
     height: 511px;
-    margin: 20px 0;
   }
-  
+  .footer_info{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    text-align: center;
+    padding: 2px;
+    font-size: 14px;
+    cursor: pointer; 
+    height: 22px;
+
+}
+  .footer_info .footer-links{
+    color: #337ab7;
+  }
+  .footer {
+    margin-top: 20px;
+    font-size: 80%;
+    color: #aaa;
+    padding: 8px;
+    text-align: center;
+    font-size: 11.2px;
+}
+.test .container .product-image{
+    width: 371px;
+    height: 371px;
+
+}
+.test .question {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 24px;
+}
+.test .buttons{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+}
+.test .button-test{
+    cursor: pointer;  
+    text-decoration: none;
+    display: inline-block;
+    width: 584px;
+    min-height: 60px;
+    padding: 0 auto;
+    margin: 20px 0;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #0077c0;
+    background: transparent;
+    border-radius: 8px;
+    font-size: 20px;
+    color: #0077c0;
+    transition: .6s ease-in-out;
+}
