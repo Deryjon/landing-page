@@ -178,9 +178,9 @@ body {
     padding: 5px;
     background-color: #000000;
     border-radius: 20px;
-    min-width: 40px; /* Устанавливаем минимальную ширину */
-    text-align: center; /* Центрируем текст внутри элемента */
-    transition: width 0.5s ease; /* Добавляем плавный переход */
+    min-width: 40px; 
+    text-align: center; 
+    transition: width 0.5s ease; 
 }
 
   
@@ -200,7 +200,6 @@ body {
       opacity: 1;
     }
   }
-  /* Добавляем ключевые кадры для анимации */
 @keyframes slide-up {
     0% { transform: translateY(50px); opacity: 0; }
     100% { transform: translateY(0); opacity: 1; }
@@ -211,7 +210,6 @@ body {
     100% { transform: translateY(50px); opacity: 0; }
   }
   
-  /* Применяем анимацию к элементу с классом .question */
   .question {
     animation-duration: 0.5s;
     animation-timing-function: ease-out;
@@ -234,7 +232,7 @@ body {
   
   .question.open {
     opacity: 1;
-    max-height: 200px; /* Максимальная высота блока вопроса */
+    max-height: 200px; 
     visibility: visible;
     transition-delay: 0s;
   }
