@@ -1,81 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="./assets/icons/fav.webp" type="image/x-icon" />
-    <title>Il Tuo Regalo Personale!</title>
-    <link rel="stylesheet" href="./assets/styles/style.css" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="logo">
-        <img src="./assets/icons/logo.webp" alt="" class="" />
-      </div>
-    </header>
-    <section class="about">
-      <div class="container">
-        <h1 class="title-section">CARTA REGALO PER DECATHLON</h1>
-        <div class="text-about">
-          <p>
-            Abbiamo lanciato una
-            <br />
-            nuova promozione!
-          </p>
-        </div>
-        <div class="text-about">
-          <p>
-            Fai questo semplice test, che non richiede più di un minuto, e vinci
-            <br />
-            un premio.
-          </p>
-        </div>
-        <button class="button scrollTo">INIZIA</button>
-
-        <img src="./assets/icons/hero.webp" class="product-image" />
-      </div>
-    </section>
-
-    <section class="test">
-      <div class="container">
-        <img src="./assets/icons/hero.webp" class="product-image" />
-      </div>
-      <div class="question">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="./assets/icons/fav.webp" type="image/x-icon" />
+  <title>Il Tuo Regalo Personale!</title>
+  <link rel="stylesheet" href="./assets/styles/style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <img src="./assets/icons/logo.webp" alt="Logo" />
+    </div>
+  </header>
+  <section class="about">
+    <div class="container">
+      <h1 class="title-section">CARTA REGALO PER DECATHLON</h1>
+      <div class="text-about">
         <p>
-          Rispondi a 3 domande
+          Abbiamo lanciato una
           <br />
-          Hai mai fatto acquisti da Decathlon?
+          nuova promozione!
         </p>
       </div>
-      <div class="buttons">
-        <div class="button-test">
-            SI
-        </div>
-        <div class="button-test">
-            No
+      <div class="text-about">
+        <p>
+          Fai questo semplice test, che non richiede più di un minuto, e vinci
+          <br />
+          un premio.
+        </p>
+      </div>
+      <button class="button scrollTo">INIZIA</button>
+      <img src="./assets/icons/hero.webp" class="product-image" alt="Hero Image" />
+    </div>
+  </section>
+
+  <section class="test" style="display:none;">
+    <div class="container">
+      <img src="./assets/icons/hero.webp" class="product-image" alt="Hero Image" />
+      <p class="question">Rispondi a 3 domande</p>
+    </div>
+    <div class="wrapper" id="first_page">
+      <div class="wrapper-block">
+        <p class="content-to-hide"></p>
+      </div>
+      <div class="questions_wrapper">
+        <div id="questionWrapper" class="alpha60">
+          <div class="question" id="questionText">
+            <p>Hai mai fatto acquisti da Decathlon?</p>
+            <div class="buttons">
+              <button id="yesButton" class="button-test">Sì</button>
+              <button id="noButton" class="button-test">No</button>
+            </div>
+          </div>
+          <div class="progress_block">
+            <div class="progress-wrap">
+              <div class="progress" id="progress_value">0%</div>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
-    <footer class="footer">
-      I marchi e i beni presentati sul sito web sono marchi registrati di terze
-      parti, che sono i proprietari di tali marchi e beni. Non vi è alcuna
-      affiliazione, associazione o sostegno da parte di tali terze parti quando
-      i loro beni sono utilizzati. Non possiamo garantire che riceverete una
-      delle offerte che avete richiesto, poiché le offerte sono soggette a
-      disponibilità e spesso sono fatte da altre aziende. Le offerte vengono
-      distribuite in quantità limitata e i nostri partner si riservano il
-      diritto di sostituire le offerte in base alla disponibilità. Le offerte
-      che non vengono distribuite dai nostri partner sono monitorate da altre
-      aziende e non siamo responsabili se tali offerte non sono più disponibili,
-      cambiano, se non ricevete le offerte, se non vi qualificate per le offerte
-      o se sorgono altri problemi. I nomi dei prodotti, i loghi, i marchi e i
-      marchi di terze parti rappresentati su questo sito sono di proprietà dei
-      rispettivi proprietari.
-    </footer>
-    <div class="footer_info" style="background: #f8f8f8">
-      <a href="policy.html" class="footer-links">Informativa sulla Privacy</a
-      >&nbsp;&nbsp;&nbsp;&nbsp;
-      <a href="terms.html" class="footer-links">Termini di Servizio</a
-      >&nbsp;&nbsp;&nbsp;&nbsp;
     </div>
-  </body>
+  </section>
+
+  <footer class="footer">
+    I marchi e i beni presentati sul sito web sono marchi registrati di terze
+    parti, che sono i proprietari di tali marchi e beni. Non vi è alcuna
+    affiliazione, associazione o sostegno da parte di tali terze parti quando
+    i loro beni sono utilizzati. Non possiamo garantire che riceverete una
+    delle offerte che avete richiesto, poiché le offerte sono soggette a
+    disponibilità e spesso sono fatte da altre aziende. Le offerte vengono
+    distribuite in quantità limitata e i nostri partner si riservano il
+    diritto di sostituire le offerte in base alla disponibilità. Le offerte
+    che non vengono distribuite dai nostri partner sono monitorate da altre
+    aziende e non siamo responsabili se tali offerte non sono più disponibili,
+    cambiano, se non ricevete le offerte, se non vi qualificate per le offerte
+    o se sorgono altri problemi. I nomi dei prodotti, i loghi, i marchi e i
+    marchi di terze parti rappresentati su questo sito sono di proprietà dei
+    rispettivi proprietari.
+  </footer>
+
+  <div class="footer_info">
+    <a href="policy.html" class="footer-links">Informativa sulla Privacy</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="terms.html" class="footer-links">Termini di Servizio</a>
+  </div>
+
+  <script src="./js/script.js"></script>
+</body>
 </html>
